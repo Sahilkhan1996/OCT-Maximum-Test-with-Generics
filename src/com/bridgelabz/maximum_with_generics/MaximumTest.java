@@ -1,6 +1,7 @@
 package com.bridgelabz.maximum_with_generics;
 
 public class MaximumTest {
+	
 	public static void main(String[] args) {
 		// Checking maximum with integers
 		computeMax(100, 20, 30);
@@ -10,7 +11,11 @@ public class MaximumTest {
 		computeMax(100.0F, 20.0F, 30.0F);
 		computeMax(10.0F, 500.1F, 30.2F);
 		computeMax(40.4F, 20.7F, 300.9F);
+		computeMax("Apple","Peach","Banana");
+		computeMax("Peach","Apple","Banana");
+		computeMax("Peach","Banana", "Apple");
 	}
+
 
 	private static <T extends Comparable<T>> void computeMax(T x, T y, T z) {
 		T max = x;
